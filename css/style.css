@@ -106,6 +106,13 @@ ul, ol {
 
 .section {
     background-color: #2E2F42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.70), 
+        rgba(46, 47, 66, 0.70)),
+        url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 188px 0;
     display: flex;
 }
@@ -156,6 +163,11 @@ ul, ol {
 }
 .section-advantages-item {
     width: calc((100% - 72px) / 4);
+}
+.section-advantages-icon {
+    width: 100%;
+    height: 100%;
+
 }
 .advantages-list-text {
     color: #434455;
@@ -221,6 +233,9 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.team-item-icons {
+
 }
 
 /*section four*/
