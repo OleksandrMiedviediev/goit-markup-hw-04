@@ -59,7 +59,6 @@ ul, ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
-    position: relative;
 }
 
 .header-logo-span {
@@ -77,6 +76,18 @@ ul, ol {
 }
 .header-menu-item {
     padding: 24px 0;
+    position: relative;
+    color: #404bbf; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 .header-menu-link {
     color: #2E2F42;
@@ -101,6 +112,9 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-style:normal;
+}
+.header-contacts-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts-link:hover, .header-contacts-link:focus {
     color: #404bbf;
