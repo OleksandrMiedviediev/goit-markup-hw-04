@@ -383,17 +383,17 @@ ul, ol {
 
 /*FOOTER*/
 
-.footer-content {
-    display: flex;
-    align-items: baseline;
-    margin-right: 120px;
-}
-
 .footer {
     background-color: #2E2F42;
     padding: 100px 0;
 }
-
+.footer-content {
+    display: flex;
+    align-items: baseline;
+}
+.footer-container {
+    margin-right: 120px;
+}
 .footer-logo-span {
     color: #f4f4fd;
     font-family: 'Raleway', sans-serif;
@@ -430,7 +430,10 @@ ul, ol {
     color: #FFFFFF;
     margin-bottom: 16px;
 }
-
+.footer-media-list {
+    display: flex;
+    gap: 16px;
+}
 .footer-media-item {
     width: 40px;
     height: 40px;
