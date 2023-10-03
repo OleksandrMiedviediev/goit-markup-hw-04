@@ -79,7 +79,7 @@ ul, ol {
     gap: 40px;
 }
 
-.header-menu-item {
+.header-menu-link {
     padding: 24px 0;
     position: relative;
     color: #404bbf;
