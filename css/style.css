@@ -103,11 +103,7 @@ ul, ol {
     border-radius: 2px;
 }
 
-
-
-.header-menu-link:hover::after,
-.header-menu-link:focus::after,
-.header-menu-link:active::after {
+::after {
     content: '';
     position: absolute;
     left: 0;
