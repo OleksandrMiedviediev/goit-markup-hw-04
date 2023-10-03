@@ -29,13 +29,15 @@ ul, ol {
 
 /*HEADER*/
 
+/* HEADER STYLES */
+
 .header {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -43,48 +45,48 @@ ul, ol {
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .header-container {
     display: flex;
 }
+
 .header-navigation {
     display: flex;
     flex-grow: 1;
     align-items: center;
 }
-.header-logo {
-    color: #404bbf;
+
+.header-logo,
+.header-logo-span {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.header-logo {
+    color: #404bbf;
     margin-right: 76px;
 }
 
 .header-logo-span {
     color: #2E2F42;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
 
 .header-menu {
     display: flex;
     gap: 40px;
 }
+
 .header-menu-item {
     padding: 24px 0;
-}
-.header-menu-item:first-child a {
+    position: relative;
+    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-menu-item:first-child::before {
-    content: '';
-    position: relative;
-}
-.header-menu:first-child::after {
+
+.header-menu-item::after {
     content: '';
     position: absolute;
     left: 0;
@@ -93,9 +95,7 @@ ul, ol {
     background-color: #404bbf;
     border-radius: 2px;
 }
-.header-contacts-item:first-child a {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .header-menu-link {
     color: #2E2F42;
     font-size: 16px;
@@ -103,9 +103,9 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-    
 }
-.header-menu-link:hover::after ,
+
+.header-menu-link:hover::after,
 .header-menu-link:focus::after,
 .header-menu-link:active::after {
     content: '';
@@ -116,23 +116,25 @@ ul, ol {
     background-color: #404bbf;
     border-radius: 2px;
 }
+
 .header-contacts {
     font-style: normal;
     display: flex;
     gap: 40px;
     padding: 24px 0;
 }
+
 .header-contacts-link {
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-style: normal;
-}
-.header-contacts-item {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-contacts-link:hover, .header-contacts-link:focus {
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
     color: #404bbf;
 }
 
