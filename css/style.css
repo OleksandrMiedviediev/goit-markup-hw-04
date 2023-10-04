@@ -90,14 +90,18 @@ ul, ol {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-::after {
+.current::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: -1px;
     height: 4px;
+    width: 100%;
     background-color: #404bbf;
     border-radius: 2px;
+}
+.header-menu-link.current {
+    color: #404bbf ;
 }
 
 .header-contacts {
@@ -118,10 +122,6 @@ ul, ol {
 
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-    color: #404bbf;
-}
-.header-menu-link:hover,
-.header-menu-link:focus {
     color: #404bbf;
 }
 
@@ -148,7 +148,7 @@ ul, ol {
     letter-spacing: 0.02em;
     max-width: 496px;
     margin: 0 auto;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .section-button {
